@@ -433,6 +433,10 @@ ul {
 	image-rendering: crisp-edges;
 }
 
+.certifications .proj-img {
+	image-rendering: auto;
+}
+
 
 .proj-description {
 	position: absolute;
