@@ -203,21 +203,95 @@ a:hover {
 #console {
 	margin: 40px;
 	margin-top: 20px;
-	padding: 30px;
-	overflow-y:auto;
-	line-height: 22px;
-	height: 390px;
 	width: 550px;
-	font-size: 90%;
-	font-family: Monaco,monospace;
-	border-top: 20px solid #e5e5e5;
-	border-radius: 4px;
-	background-color: #2a2d34;
-	box-shadow: 12px 12px 1px #d7d3e7;
+	border-radius: 10px;
+	background-color: #2d2d3f;
+	box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.07);
+	overflow: hidden;
+	font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+#terminal-titlebar {
+	background-color: #3a3a50;
+	padding: 10px 16px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+	user-select: none;
+}
+
+#terminal-dots {
+	display: flex;
+	gap: 7px;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-red    { background-color: #FF5F57; }
+.dot-yellow { background-color: #FEBC2E; }
+.dot-green  { background-color: #28C840; }
+
+#terminal-title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(255,255,255,0.4);
+	font-size: 12px;
+	font-family: 'JetBrains Mono', monospace;
+	letter-spacing: 0.5px;
+}
+
+#terminal-body {
+	padding: 20px 30px 24px;
+	overflow: auto;
+	max-height: 430px;
+	line-height: 24px;
+	font-size: 87%;
+}
+
+#code-block {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	white-space: pre;
+	color: #a6accd;
 }
 
 #console a {
 	text-decoration: underline;
+	color: #ffcb6b;
+}
+
+.repl-prompt {
+	color: #28C840;
+	user-select: none;
+}
+
+.comment-color {
+	color: #6272a4;
+}
+
+.terminal-cursor {
+	display: inline-block;
+	width: 8px;
+	height: 15px;
+	background-color: #a6accd;
+	margin-left: 3px;
+	vertical-align: text-bottom;
+	animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+	0%, 100% { opacity: 1; }
+	50%       { opacity: 0; }
 }
 
 ul { 
@@ -226,22 +300,23 @@ ul {
 }
 
 .first-color {
-	color: #ac78c2;
+	color: #c792ea;
 }
+
 .second-color {
-	color: #c5c8c6;
+	color: #a6accd;
 }
 
 .third-color {
-	color: #5888ca;
+	color: #89ddff;
 }
 
 .fourth-color {
-	color: #f0c674;
+	color: #ffcb6b;
 }
 
 .fifth-color {
-	color: #b5bd68;
+	color: #82aaff;
 }
 
 /**Education**/
@@ -435,6 +510,24 @@ ul {
 
 #social-container a:hover {
 	color: #8d8d8d;
+}
+
+@media (max-width: 700px) {
+	#console {
+		width: 90%;
+		margin: 20px auto;
+	}
+	#terminal-body {
+		font-size: 78%;
+		padding: 14px 16px 18px;
+	}
+	#img-console {
+		flex-direction: column;
+	}
+	#about-img {
+		height: 300px;
+		margin: 10px auto;
+	}
 }
 
 #copyright {
