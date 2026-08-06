@@ -204,26 +204,26 @@ a:hover {
 	margin: 40px;
 	margin-top: 20px;
 	width: 550px;
-	border-radius: 10px;
-	background-color: #2d2d3f;
-	box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.07);
+	border-radius: 12px;
+	background-color: #2a2a3c;
+	box-shadow: 0 24px 60px -18px rgba(20,18,45,0.45);
 	overflow: hidden;
 	font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 #terminal-titlebar {
-	background-color: #3a3a50;
-	padding: 10px 16px;
+	background-color: #22222f;
+	height: 46px;
+	padding: 0 18px;
 	display: flex;
 	align-items: center;
 	position: relative;
-	border-bottom: 1px solid rgba(255,255,255,0.06);
 	user-select: none;
 }
 
 #terminal-dots {
 	display: flex;
-	gap: 7px;
+	gap: 8px;
 }
 
 .dot {
@@ -241,18 +241,15 @@ a:hover {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	color: rgba(255,255,255,0.4);
-	font-size: 12px;
-	font-family: 'JetBrains Mono', monospace;
-	letter-spacing: 0.5px;
+	color: #8a8aa8;
+	font: 500 14px/1 'JetBrains Mono', monospace;
 }
 
 #terminal-body {
-	padding: 20px 30px 24px;
+	padding: 30px 34px 36px;
 	overflow: auto;
 	max-height: 430px;
-	line-height: 24px;
-	font-size: 87%;
+	font: 400 15px/1.85 'JetBrains Mono', monospace;
 }
 
 #code-block {
@@ -262,12 +259,12 @@ a:hover {
 	font-size: inherit;
 	line-height: inherit;
 	white-space: pre;
-	color: #a6accd;
+	color: #d8d8e8;
 }
 
 #console a {
 	text-decoration: underline;
-	color: #ffcb6b;
+	color: #ffb86c;
 }
 
 .repl-prompt {
@@ -283,7 +280,7 @@ a:hover {
 	display: inline-block;
 	width: 8px;
 	height: 15px;
-	background-color: #a6accd;
+	background-color: #d8d8e8;
 	margin-left: 3px;
 	vertical-align: text-bottom;
 	animation: blink-cursor 1s step-end infinite;
@@ -300,23 +297,27 @@ ul {
 }
 
 .first-color {
-	color: #c792ea;
+	color: #bb86fc;
 }
 
 .second-color {
-	color: #a6accd;
+	color: #7f7f9c;
 }
 
 .third-color {
-	color: #89ddff;
+	color: #82aaff;
 }
 
 .fourth-color {
-	color: #ffcb6b;
+	color: #ffb86c;
 }
 
 .fifth-color {
-	color: #82aaff;
+	color: #ffcb6b;
+}
+
+.self-color {
+	color: #e57ba7;
 }
 
 /**Education**/
@@ -522,8 +523,8 @@ ul {
 		margin: 20px auto;
 	}
 	#terminal-body {
-		font-size: 78%;
-		padding: 14px 16px 18px;
+		font-size: 12px;
+		padding: 18px 18px 22px;
 	}
 	#img-console {
 		flex-direction: column;

@@ -56,15 +56,20 @@
 							<span id="terminal-title">jorge@portfolio ~ python3 about.py</span>
 						</div>
 						<div id="terminal-body"><pre id="code-block"><span class="first-color">class</span> <span class="third-color">Jorge</span><span class="second-color">(</span><span class="third-color">Human</span><span class="second-color">):</span>
-    <span class="first-color">def</span> <span class="fifth-color">__init__</span><span class="second-color">(</span><span class="first-color">self</span><span class="second-color">):</span>
-        <span class="first-color">self</span><span class="second-color">.full_name = </span><span class="fourth-color">"Jorge Arambula"</span>
-        <span class="first-color">self</span><span class="second-color">.location = </span><span class="fourth-color">"Stockton, CA"</span>
-        <span class="first-color">self</span><span class="second-color">.education = </span><span class="fourth-color">"B.A. Cognitive Science, UC Davis"</span>
-        <span class="first-color">self</span><span class="second-color">.skills = [</span><span class="fourth-color">"Python"</span><span class="second-color">, </span><span class="fourth-color">"JavaScript"</span><span class="second-color">, </span><span class="fourth-color">"Bash"</span><span class="second-color">, </span><span class="fourth-color">"SQL"</span><span class="second-color">, </span><span class="fourth-color">"PowerShell"</span><span class="second-color">]</span>
-        <span class="first-color">self</span><span class="second-color">.interests = [</span><span class="fourth-color">"prediction markets"</span><span class="second-color">, </span><span class="fourth-color">"poker GTO"</span><span class="second-color">, </span><span class="fourth-color">"homelabs"</span><span class="second-color">, </span><span class="fourth-color">"hiking"</span><span class="second-color">]</span>
+    <span class="first-color">def</span> <span class="fifth-color">__init__</span><span class="second-color">(</span><span class="self-color">self</span><span class="second-color">):</span>
+        <span class="self-color">self</span>.full_name = <span class="fourth-color">"Jorge Arambula"</span>
+        <span class="self-color">self</span>.home_town = <span class="fourth-color">"Stockton, CA"</span>
+        <span class="self-color">self</span>.school = <span class="fourth-color">"UC Davis"</span>
+        <span class="self-color">self</span>.graduated = <span class="fourth-color">"September 2025"</span>
+        <span class="self-color">self</span>.resume = <span class="third-color">Resume</span><span class="second-color">(</span><span class="fourth-color">"<a href="assets/ArambulaJorge(2026).pdf" target="_blank">pdf</a>"</span><span class="second-color">)</span>
+        <span class="self-color">self</span>.hobbies_and_interests = <span class="second-color">[</span>
+            <span class="fourth-color">"content creation"</span><span class="second-color">, </span><span class="fourth-color">"skiing"</span><span class="second-color">, </span><span class="fourth-color">"dancing"</span><span class="second-color">,</span>
+            <span class="fourth-color">"classical music"</span><span class="second-color">, </span><span class="fourth-color">"hiking"</span><span class="second-color">, </span><span class="fourth-color">"video games"</span>
+        <span class="second-color">]</span>
 
-    <span class="first-color">def</span> <span class="fifth-color">contact</span><span class="second-color">(</span><span class="first-color">self</span><span class="second-color">):</span>
-        <span class="first-color">return</span> <span class="fourth-color">"<a href='mailto:arambula.jorge@gmail.com' class='fourth-color'>arambula.jorge@gmail.com</a>"</span><span class="terminal-cursor"></span></pre>
+    <span class="first-color">def</span> <span class="fifth-color">contact</span><span class="second-color">(</span><span class="self-color">self</span><span class="second-color">):</span>
+        <span class="self-color">self</span>.email = <span class="third-color">Email</span><span class="second-color">(</span><span class="fourth-color">"<a href="mailto:jarambula@ucdavis.edu">jarambula@ucdavis.edu</a>"</span><span class="second-color">)</span>
+        <span class="self-color">self</span>.links = <span class="second-color">[</span><span class="fourth-color">"<a href="https://www.linkedin.com/in/jorgearambula1" target="_blank">LinkedIn</a>"</span><span class="second-color">, </span><span class="fourth-color">"<a href="https://github.com/arambu1a" target="_blank">Github</a>"</span><span class="second-color">, </span><span class="fourth-color">"<a href="#">Instagram</a>"</span><span class="second-color">]</span></pre>
 						</div>
 					</div>
 					<img src="assets/img/realme.jpg" id="about-img">
