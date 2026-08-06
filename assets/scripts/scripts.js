@@ -110,3 +110,30 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// education dots: swap between the school panels
+var eduDots = document.getElementsByClassName("edu-dot");
+var eduPanels = document.getElementsByClassName("edu-panel");
+for (var d = 0; d < eduDots.length; d++) {
+  eduDots[d].addEventListener("click", function(){
+    var j;
+    // remember where the dot sits on screen so it stays under the cursor
+    var before = this.getBoundingClientRect().top;
+
+    for (j = 0; j < eduPanels.length; j++) w3RemoveClass(eduPanels[j], "selected");
+    for (j = 0; j < eduDots.length; j++) w3RemoveClass(eduDots[j], "selected");
+    w3AddClass(document.getElementById(this.getAttribute("data-panel")), "selected");
+    w3AddClass(this, "selected");
+
+    // swapping panels changes the page height, which can shove the dots away;
+    // scroll back by the difference (without the page's smooth scrolling)
+    var shift = this.getBoundingClientRect().top - before;
+    if (shift) {
+      var root = document.documentElement;
+      var behavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto";
+      window.scrollBy(0, shift);
+      root.style.scrollBehavior = behavior;
+    }
+  });
+}
+

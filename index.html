@@ -58,13 +58,13 @@
 						<div id="terminal-body"><pre id="code-block"><span class="first-color">class</span> <span class="third-color">Jorge</span><span class="second-color">(</span><span class="third-color">Human</span><span class="second-color">):</span>
     <span class="first-color">def</span> <span class="fifth-color">__init__</span><span class="second-color">(</span><span class="self-color">self</span><span class="second-color">):</span>
         <span class="self-color">self</span>.full_name = <span class="fourth-color">"Jorge Arambula"</span>
-        <span class="self-color">self</span>.home_town = <span class="fourth-color">"Stockton, CA"</span>
+        <span class="self-color">self</span>.home_town = <span class="fourth-color">"San Jose, CA"</span>
         <span class="self-color">self</span>.school = <span class="fourth-color">"UC Davis"</span>
-        <span class="self-color">self</span>.graduated = <span class="fourth-color">"September 2025"</span>
-        <span class="self-color">self</span>.resume = <span class="third-color">Resume</span><span class="second-color">(</span><span class="fourth-color">"<a href="assets/ArambulaJorge(2026).pdf" target="_blank">pdf</a>"</span><span class="second-color">)</span>
+        <span class="self-color">self</span>.graduated = <span class="fourth-color">"June 2025"</span>
+        <span class="self-color">self</span>.resume = <span class="third-color">Resume</span><span class="second-color">(</span><span class="fourth-color">"<a href="JorgeArambula2026.pdf" target="_blank">pdf</a>"</span><span class="second-color">)</span>
         <span class="self-color">self</span>.hobbies_and_interests = <span class="second-color">[</span>
-            <span class="fourth-color">"content creation"</span><span class="second-color">, </span><span class="fourth-color">"skiing"</span><span class="second-color">, </span><span class="fourth-color">"dancing"</span><span class="second-color">,</span>
-            <span class="fourth-color">"classical music"</span><span class="second-color">, </span><span class="fourth-color">"hiking"</span><span class="second-color">, </span><span class="fourth-color">"video games"</span>
+            <span class="fourth-color">"content creation"</span><span class="second-color">, </span><span class="fourth-color">"skiing"</span><span class="second-color">, </span><span class="fourth-color">"overwatch"</span><span class="second-color">,</span>
+            <span class="fourth-color">"classical music"</span><span class="second-color">, </span><span class="fourth-color">"hiking"</span><span class="second-color">, </span><span class="fourth-color">"poker"</span>
         <span class="second-color">]</span>
 
     <span class="first-color">def</span> <span class="fifth-color">contact</span><span class="second-color">(</span><span class="self-color">self</span><span class="second-color">):</span>
@@ -80,15 +80,22 @@
 			<section class="container column parallax" id="education-section">
 				<div class="container column" id="text">
 					<h1 class="subtitle">EDUCATION</h1>
-					<div class="container row" id="education-title">
-						<img src="assets/img/ucdavis.png">
-						<div class="container column" id="school">
+
+					<div class="container row" id="edu-dots">
+						<button class="edu-dot selected" data-panel="edu-ucdavis" aria-label="University of California, Davis"></button>
+						<button class="edu-dot" data-panel="edu-wgu" aria-label="Western Governors University"></button>
+					</div>
+
+					<div class="container column edu-panel selected" id="edu-ucdavis">
+					<div class="container row education-title">
+						<img src="assets/img/ucdavis.png" alt="University of California, Davis">
+						<div class="container column school">
 							<h2>University of California, Davis</h2>
 							<h3>B.A. - Computer Science</h3>
-							<p>Graduated: September 2025</p>
+							<p>Graduated: June 2025</p>
 						</div>
 					</div>
-					<div class="container column" id="coursework">
+					<div class="container column coursework">
 						<h4>Relevant Coursework:</h4>
 						<p>Computer Science</p>
 						<ul>
@@ -99,7 +106,7 @@
 							<li>Computational Linguistics (LIN 177)</li>
 							<li>Analysis of Variance (STA 106)</li>
 							<li>Probability Theory (STA 131A) </li>
-							<li>Mathematical Statistics (STA 131B)*</li>
+							<li>Mathematical Statistics (STA 131B)</li>
 						</ul>
 						<p>Cognitive Science</p>
 						<ul>
@@ -119,7 +126,33 @@
 							<li>Principles of Macroeconomics (ECN 100A)</li>
 							<li>Combinatorics (MAT 145)</li>
 						</ul>
-						<p id="progress">*in progress</p>
+						<p class="progress">*in progress</p>
+					</div>
+					</div>
+
+					<div class="container column edu-panel" id="edu-wgu">
+					<div class="container row education-title">
+						<img src="assets/img/wgu.webp" alt="Western Governors University">
+						<div class="container column school">
+							<h2>Western Governors University</h2>
+							<h3>M.S. - Computer Science, AI &amp; Machine Learning</h3>
+							<p>Expected Graduation: December 2027</p>
+						</div>
+					</div>
+					<div class="container column coursework">
+						<h4>Relevant Coursework:</h4>
+						<ul>
+							<li>Applied Algorithms and Reasoning</li>
+							<li>Unix and Linux*</li>
+							<li>Artificial Intelligence and Machine Learning Foundations*</li>
+							<li>Governance, Risk, and Compliance*</li>
+							<li>Machine Learning for Computer Scientists*</li>
+							<li>Deep Learning</li>
+							<li>Natural Language Processing</li>
+							<li>Advanced AI for Computer Scientists*</li>
+						</ul>
+						<p class="progress">*in progress</p>
+					</div>
 					</div>
 				</div>
 			</section>
